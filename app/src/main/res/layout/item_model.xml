@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp">
+
+    <ImageView
+        android:id="@+id/model_image"
+        android:layout_width="391dp"
+        android:layout_height="489dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/iv_first_model" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_heart"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/model_image"
+        app:layout_constraintEnd_toEndOf="@+id/model_image" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/tenor_sans"
+        android:text="M O H A N"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model_image" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="302dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/tenor_sans"
+        android:text="Recycle Boucle Knit Cardigan Pink"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:text="$120"
+        android:fontFamily="@font/tenor_sans"
+        android:textSize="18sp"
+        android:textColor="#DD8560"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
